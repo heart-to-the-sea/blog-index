@@ -26,12 +26,12 @@ function App() {
   return (
     <div id="App">
       <RouterMap />
-      <ProblemLogTip
+      {/* <ProblemLogTip
         visible={visible}
         onToggle={(v) => {
           setVisible(v);
         }}
-      />
+      /> */}
     </div>
   );
 }

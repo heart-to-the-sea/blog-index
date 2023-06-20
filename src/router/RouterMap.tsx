@@ -1,16 +1,22 @@
-import { createBrowserRouter, RouteObject, RouterProvider } from "react-router-dom";
+import { Route, RouteObject, Router, Routes } from "react-router-dom";
 import ClassPage from "../pages/class";
 import Edit from "../pages/edit";
 import IndexPage from "../pages/index";
 import Terminal from "../pages/terminal";
 import View from "../pages/view";
+import Header from "../components/pagesComponent/Header/Header";
+import BeforePage from "../pages/before";
 const routers: RouteObject[] = [
   {
     path: "",
     element: <IndexPage />,
   },
   {
-    path: "terminal",
+    path: "/before",
+    element: <BeforePage />,
+  },
+  {
+    path: "/terminal",
     element: <Terminal />,
   },
   {
@@ -30,7 +36,17 @@ const routers: RouteObject[] = [
     element: <View />,
   },
 ];
-export const ROUTER_LIST = createBrowserRouter(routers);
+// export const ROUTER_LIST = createBrowserRouter(routers);
 export default function RouterMap() {
-  return <RouterProvider router={ROUTER_LIST}></RouterProvider>;
+  // return <RouterProvider router={ROUTER_LIST}></RouterProvider>;
+  return (
+    <>
+      <Header />
+      <Routes>
+        {routers.map((item) => (
+          <Route path={item.path} element={item.element as any} />
+        ))}
+      </Routes>
+    </>
+  );
 }

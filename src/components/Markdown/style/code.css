@@ -9,7 +9,7 @@ pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 1em;
-  font-size: 16px;
+  font-size: 14px;
 }
 .function_ {
   color: #f08d49;
@@ -28,6 +28,8 @@ pre.hljs {
   line-height: 22px !important;
 }
 pre.hljs code {
+  font-size: 14px;
+  line-height: 1.5em;
   display: block !important;
   margin: 0 10px !important;
   overflow-x: auto !important;

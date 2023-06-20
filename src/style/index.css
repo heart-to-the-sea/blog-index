@@ -34,3 +34,10 @@
 .jump-mark .mark {
   color: #fff !important;
 }
+.mermaid {
+  display: flex;
+  justify-content: center;
+}
+.page {
+  padding-top: 50px;
+}

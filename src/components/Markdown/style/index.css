@@ -10,7 +10,7 @@ pre code.hljs {
   display: block;
   overflow-x: auto;
   padding: 1em;
-  font-size: 16px;
+  font-size: 14px;
 }
 .function_ {
   color: #f08d49;
@@ -29,6 +29,8 @@ pre.hljs {
   line-height: 22px !important;
 }
 pre.hljs code {
+  font-size: 14px;
+  line-height: 1.5em;
   display: block !important;
   margin: 0 10px !important;
   overflow-x: auto !important;
@@ -273,6 +275,9 @@ pre code {
   height: 100vh;
   overflow-y: scroll;
   padding: 15px 20px;
+  line-height: 1.5em;
+  color: #000000;
+  background-color: #ffffff;
 }
 .markdown .preview h1,
 .markdown .preview h2,
@@ -303,7 +308,15 @@ pre code {
   width: 5px;
   height: 100%;
   border-radius: 2px;
-  background-color: #00c4c4;
+  background-color: #000000;
+}
+.markdown .preview h1 .header-anchor,
+.markdown .preview h2 .header-anchor,
+.markdown .preview h3 .header-anchor,
+.markdown .preview h4 .header-anchor,
+.markdown .preview h5 .header-anchor,
+.markdown .preview h6 .header-anchor {
+  display: none;
 }
 .markdown .preview h1:hover,
 .markdown .preview h2:hover,

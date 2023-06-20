@@ -7,11 +7,14 @@ import reportWebVitals from "./reportWebVitals";
 import initLangurage from "./components/Markdown/initLangurage";
 import appStore from "./store";
 import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 initLangurage();
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <Provider store={appStore}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
 );
 
